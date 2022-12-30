@@ -11,7 +11,6 @@ public class Student {
         this.bloodType = bloodType;
     }
 
-
     public String getName() {return name;}
     public int getHeight() {return height;}
     public String getBloodType() {return bloodType;}
