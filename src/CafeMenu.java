@@ -34,10 +34,10 @@ public class CafeMenu {
                 .forEach(System.out::println); //forEachでストリーム内の要素をそれぞれ取り出し、System.out.printlnを使用して標準出力に出力。
 
         //Optional<T>.orElse(T other)メソッドを使用することで、値が存在しない場合にデフォルト値を返すことができる。
-        Integer minPrice  = priceLists.stream().min(Comparator.naturalOrder()).orElse(-1);//最小の値の取得
+        Integer minPrice  = priceLists.stream().min(Comparator.naturalOrder()).orElse(0);//最小の値の取得
         System.out.println(minPrice);
 
-        Integer maxPrice = priceLists.stream().max(Comparator.naturalOrder()).orElse(-1);//最大の値の取得
+        Integer maxPrice = priceLists.stream().max(Comparator.naturalOrder()).orElse(0);//最大の値の取得
         System.out.println(maxPrice);
 
         //文字列を区切り文字で連結し、指定された接頭辞と接尾辞等を付加

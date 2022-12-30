@@ -27,7 +27,7 @@ public class StudentList {
         Map<String, List<Student>> bloodTypeToStudents = list.stream() //グループの変数名はkeyToValue かvalueByKeyのような形式が良い
                 .collect(Collectors.groupingBy(Student::getBloodType));
 
-        //grp.entrySet()を使用して、Mapオブジェクトのエントリを取得
+        //bloodTypeToStudents.entrySet()を使用して、Mapオブジェクトのエントリを取得
         //forEachを使用して、取得したエントリをそれぞれ処理
         //entryを使用して、エントリからキーを取得し、System.out.printlnを使用して標準出力に出力
         bloodTypeToStudents.entrySet().forEach(entry -> {

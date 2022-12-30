@@ -16,7 +16,7 @@ public class Student {
     public String getBloodType() {return bloodType;}
 
 
-    //「Student」クラスを表示するときに、「name」フィールドや「height」フィールドの値を知りたい場合は、「toString」メソッドをオーバーライドして、それらの値を含む文字列を返すようにする。
+    //「Student」クラスを表示するときに「name」フィールドや「height」フィールドの値を知りたい場合は「toString」メソッドをオーバーライドして、それらの値を含む文字列を返すようにする。
     //「toString」メソッドは、オブジェクトを文字列に変換するメソッド。Javaでは、オブジェクトを直接出力する場合、「toString」メソッドが呼び出され、その戻り値が出力。
         @Override
         public String toString() {
